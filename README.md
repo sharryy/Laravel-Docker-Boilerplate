@@ -23,3 +23,6 @@ Visit `http://localhost:8000` in your browser.
 > **_NOTE:_** If you are encountering any file permission problems, then change the default user and group(which is Laravel in this case) for PHP, Nginx and Composer Dockerfile according to your File System. For MAC 
 users, there is no need of it since it creates virtualization layer between file systems. However, for Windows, Linux or WSL2 you need to configure user and groups for
 proper working.
+
+| :exclamation:  This dockerized setup should be used for development only and any production use is discouraged. |
+|-----------------------------------------|
