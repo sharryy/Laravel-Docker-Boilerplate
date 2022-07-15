@@ -5,7 +5,7 @@ six containers mandatory for any Laravel project. i.e PHP, Nginx, MySQL or Postg
 
     git clone git@github.com:sharryy/Laravel-Docker-Boilerplate.git
     
-`Remove the index.php file` inside `src/` directory since Laravel project will be created inside that directory. Add credentials of database in `database.env` file and 
+Remove the `index.php` file inside `src/` directory since Laravel project will be created inside that directory. Add credentials of database in `database.env` file and 
 corresponding database in `docker-compose.yml` (default is MySQL). Then run following command to build composer service:
 
     docker-compose build composer -d
@@ -14,8 +14,7 @@ Use following command to create laravel  project inside `src/` directory.
 
     docker-compose run composer create-project laravel/laravel .
 
-This will create Laravel project inside `src/` directory. Then run `docker-compose up --build -d` to run containers in detach mode. This will spin up Nginx and Database
-containers.
+This will create Laravel project inside `src/` directory. Then run `docker-compose up --build -d` to spin up Nginx and Database containers.
 
 Visit `http://localhost:8000` in your browser.
 
