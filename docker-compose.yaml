@@ -21,8 +21,22 @@ services:
       - ./src:/var/www/html:delegated
   database:
     image: mysql:5.7
+    restart: always
     env_file:
       - ./env/database.env
+    volumes:
+      - data:/var/lib/mysql
+    # image: postgres
+    # restart: always
+    # env_file:
+    #   - ./env/database.env
+    # volumes:
+    #   - data:/var/lib/postgresql/data
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - '8080:80'
   composer:
     build:
       context: ./dockerfiles
