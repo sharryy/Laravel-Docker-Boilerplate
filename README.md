@@ -6,7 +6,7 @@ six containers mandatory for any Laravel project. i.e PHP, Nginx, MySQL or Postg
     git clone git@github.com:sharryy/Laravel-Docker-Boilerplate.git
     
 `Remove the index.php file` inside `src/` directory since Laravel project will be created inside that directory. Add credentials of database in `database.env` file and 
-corresponding database in `docker-compose.yml` file inside database service (default is MySQL). Then run following command in order:
+corresponding database in `docker-compose.yml` (default is MySQL). Then run following command to build composer service:
 
     docker-compose build composer -d
     
